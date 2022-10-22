@@ -1,4 +1,4 @@
-module gh2
+module github.com/lllk140/gh2
 
 go 1.19
 
