@@ -2,7 +2,7 @@ package PH2
 
 import (
 	"bytes"
-	"gh2/GH2/IntBinary"
+	"github.com/lllk140/gh2/GH2/IntBinary"
 	"golang.org/x/net/http2/hpack"
 )
 
