@@ -1,6 +1,7 @@
 # gh2
 go-http2-client
 
+[github.com/python-hyper/h2](https://github.com/python-hyper/h2)
 
 ``` go get github.com/lllk140/gh2 ```
 
