@@ -1,4 +1,4 @@
-package PH2
+package GH2
 
 import (
 	"bytes"

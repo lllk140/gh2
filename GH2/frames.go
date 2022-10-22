@@ -1,4 +1,4 @@
-package PH2
+package GH2
 
 import (
 	"github.com/lllk140/gh2/GH2/IntBinary"
