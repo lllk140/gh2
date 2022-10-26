@@ -21,13 +21,10 @@ type Frame struct {
 // 生成帧头
 func (receiver *Frame) buildHeader(body []byte) []byte {
 	receiver.Length = int64(len(body))
-	//if receiver.Length > 16384 {
-	//	return nil
-	//}
-	var H1 = int(receiver.Length & 0xFF)
+	var H1 = int(receiver.Length)
 	var B1 = int(receiver.FrameType)
 	var B2 = int(receiver.Flags)
-	var L2 = int(receiver.StreamId & 0x7FFFFFFF)
+	var L2 = int(receiver.StreamId)
 	var values = []int{0, H1, B1, B2, L2}
 	return IntBinary.Pack("BHBBL", values)
 }
